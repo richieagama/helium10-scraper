@@ -31,11 +31,11 @@ def process_asins():
             page.wait_for_selector(email_selector, timeout=10000)
             
             print("Filling email...")
-            page.fill(email_selector, 'ragama@nuwattlighting.com')
+            page.fill(email_selector, 'email')
             
             print("Filling password...")
             password_selector = 'input[type="password"], #loginform-password, input[name="password"]'
-            page.fill(password_selector, '#pregs6023')
+            page.fill(password_selector, 'password')
             
             # Take screenshot before clicking submit
             page.screenshot(path="2_filled_form.png")
